@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$gc: #f29824;
+$gh: #fff5e8;
+$tc: #333333;
+$pc: #808191;
+$bc: #252831;
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.c-gold {
+  color: $gc;
+}
+
+.layout-content {
+  min-height: 80vh;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 39px !important;
+}
+
+/* Track */
+
+.scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+.scroll::-webkit-scrollbar-thumb {
+  background: $gc;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #9f9d9d;
+}
+
+.header-back {
+  height: 82px;
+  background-color: $bc;
+}
+
+div.home-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  h4 {
+    font-size: 32px;
+    color: $gc;
+    font-weight: 500;
+  }
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-simple {
+  background: #fff;
+  border: 1px solid $gc;
+  border-radius: 6px;
+  // line-height: 46px;
+  padding: 8px 15px;
+  display: inline-block;
+  // padding: 0 30px;
+  font-weight: 500;
+  font-size: 14px;
+  color: $gc;
+  &:hover {
+    color: #fff;
+    background-color: $gc;
+  }
+}
+
+body {
+  background-color: #f7f8f9;
+}
+
+.btn-simple-active {
+  background: $gc;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.anime-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.anime-item {
+  width: 25%;
+  padding: 0px 15px;
+}
+
+.btn-sm {
+  background: #fbfcff;
+  border: 1px solid #e5f1fb;
+  border-radius: 6px;
+  // line-height: 46px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: $pc;
+  margin-right: 10px;
+}
+
+.btn-sm-active {
+  background: $gc;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-a-center {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-list {
+  margin: 0px -15px !important;
+}
+
+.layout-home {
+  min-height: 80vh;
+}
+
+.slick-dots {
+  position: relative !important;
+}
+
+.slick-slider {
+  overflow: hidden;
+  padding-bottom: 30px;
+  .slick-slide {
+    padding: 0px 15px;
+  }
+}
+
+.title-content {
+  color: $tc;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.fixvh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: #333;
+  opacity: 0.6;
+}
+
+.modal-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+  button.otmen {
+    background: #c5c5c5 !important;
+  }
+  .modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    h2 {
+      font-size: 20px;
+      color: $tc;
+    }
+    .times {
+      color: $tc;
+      font-size: 16px;
+      &:hover {
+        color: $gc;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .modal-card {
+    width: 90% !important;
+  }
+}
+
+div.input-form {
+  margin-bottom: 15px;
+  div.input-rel {
+    position: relative;
+    button.btn-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      .icon {
+        font-size: 16px;
+        color: $pc;
+      }
+    }
+  }
+  input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0px 15px;
+    font-weight: 500;
+    &:hover {
+      border: 1px solid #888;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $gc;
+    }
+  }
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-7,
+.item-6,
+.item-8,
+.item-9,
+.item-10 {
+  padding: 0px 15px;
+}
+
+.item-2 {
+  width: calc(100% / 6);
+}
+
+.item-3 {
+  width: 25%;
+}
+
+.item-4 {
+  width: calc(100% / 3);
+}
+
+.item-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.item-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.item-8 {
+  width: calc((100% / 3) * 2);
+}
+
+.item-6 {
+  width: 50%;
+}
+
+.item-9 {
+  width: 75%;
+}
+
+.item-10 {
+  width: calc((100% / 6) * 5);
+}
+.item-12 {
+  width: 100%;
+}
+
+@media (max-width: 567px) {
+  .anime-row {
+    margin: 0 -10px;
+  }
+  .card-row {
+    margin: 0 -10px;
+  }
+  .item-md-2 {
+    width: calc(100% / 6);
+  }
+  .item-md-3 {
+    width: 50%;
+    padding: 0 10px;
+  }
+  .item-md-4 {
+    width: calc(100% / 3);
+  }
+  .item-md-5 {
+    width: calc((100% / 12) * 5);
+  }
+  .item-md-7 {
+    width: calc((100% / 12) * 7);
+  }
+  .item-md-8 {
+    width: calc((100% / 3) * 2);
+  }
+  .item-md-6 {
+    width: 100%;
+  }
+  .item-md-9 {
+    width: 75%;
+  }
+  .item-md-10 {
+    width: calc((100% / 6) * 5);
+  }
+  .item-md-12 {
+    width: 100%;
+  }
+}
+
+div.form-error {
+  input {
+    border: 1px solid #f94040 !important;
+  }
+  h6.error-text {
+    display: block !important;
+  }
+}
+
+h6.error-text {
+  display: none;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 14px;
+  margin-top: 4px;
+  color: #f94040;
+}
+.error-text-basic {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 14px;
+  margin-top: 4px;
+  color: #f94040;
+}
+div.check-custom {
+  .cont {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    color: $tc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  /* Hide the browser's default checkbox */
+  .cont input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    border: 1px solid $gc;
+    background-color: #fff;
+  }
+  /* On mouse-over, add a grey background color */
+  .cont:hover input ~ .checkmark {
+    background-color: $gh;
+  }
+  /* When the checkbox is checked, add a blue background */
+  .cont input:checked ~ .checkmark {
+    background-color: $gc;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  /* Show the checkmark when checked */
+  .cont input:checked ~ .checkmark:after {
+    display: block;
+  }
+  /* Style the checkmark/indicator */
+  .cont .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  .vue-ads-leading-loose {
+    display: none;
+  }
+  button {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $tc;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 5px;
+    i {
+      font-size: 22px;
+      transform: translateY(3px);
+    }
+    &:hover {
+      color: $gc;
+      background-color: $gh;
+    }
+  }
+  button.vue-ads-text-white {
+    background-color: $gc;
+    color: #fff;
+  }
+}
+
+.dashboard-content {
+  background-color: #f8fcff;
+}

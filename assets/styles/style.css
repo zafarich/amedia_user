@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.layout-content {
+  min-height: 80vh;
+}
+
+.header-back {
+  height: 82px;
+  background-color: #252831;
+}
+
+div.home-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+div.home-title h4 {
+  font-size: 32px;
+  color: #f29824;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-simple {
+  background: #fff;
+  border: 1px solid #f29824;
+  border-radius: 6px;
+  padding: 8px 15px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f29824;
+}
+
+.btn-simple:hover {
+  color: #fff;
+  background-color: #f29824;
+}
+
+body {
+  background-color: #fff;
+}
+
+.btn-simple-active {
+  background: #f29824;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.anime-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.anime-item {
+  width: 25%;
+  padding: 0px 15px;
+}
+
+button.btn-sm {
+  background: #fbfcff;
+  border: 1px solid #e5f1fb;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #808191;
+  margin-right: 10px;
+}
+
+button.btn-sm-active {
+  background: #f29824;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.slick-list {
+  margin: 0px -15px !important;
+}
+
+.slick-dots {
+  position: relative !important;
+}
+
+.slick-slider {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.slick-slider .slick-slide {
+  padding: 0px 15px;
+}
+
+.title-content {
+  color: #333333;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.fixvh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background-color: #333;
+  opacity: 0.6;
+}
+
+.modal-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 12;
+}
+
+.modal-card .modal-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-card .modal-title h2 {
+  font-size: 20px;
+  color: #333333;
+}
+
+.modal-card .modal-title .times {
+  color: #333333;
+  font-size: 16px;
+}
+
+.modal-card .modal-title .times:hover {
+  color: #f29824;
+}
+
+@media (max-width: 475px) {
+  .modal-card {
+    width: 90% !important;
+  }
+}
+
+div.input-form {
+  margin-bottom: 15px;
+}
+
+div.input-form div.input-rel {
+  position: relative;
+}
+
+div.input-form div.input-rel button.btn-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+div.input-form div.input-rel button.btn-icon .icon {
+  font-size: 16px;
+  color: #808191;
+}
+
+div.input-form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 0px 15px;
+  font-weight: 500;
+}
+
+div.input-form input:hover {
+  border: 1px solid #888;
+}
+
+div.input-form input:focus {
+  outline: none;
+  border: 1px solid #f29824;
+}
+
+.card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-7,
+.item-6,
+.item-8,
+.item-9,
+.item-10 {
+  padding: 0px 15px;
+}
+
+.item-2 {
+  width: calc(100% / 6);
+}
+
+.item-3 {
+  width: 25%;
+}
+
+.item-4 {
+  width: calc(100% / 3);
+}
+
+.item-5 {
+  width: calc((100% / 12) * 5);
+}
+
+.item-7 {
+  width: calc((100% / 12) * 7);
+}
+
+.item-8 {
+  width: calc((100% / 3) * 2);
+}
+
+.item-6 {
+  width: 50%;
+}
+
+.item-9 {
+  width: 75%;
+}
+
+.item-10 {
+  width: calc((100% / 6) * 5);
+}
+
+@media (min-width: 567px) {
+  .item-md-2 {
+    width: calc(100% / 6);
+  }
+  .item-md-3 {
+    width: 25%;
+  }
+  .item-md-4 {
+    width: calc(100% / 3);
+  }
+  .item-md-5 {
+    width: calc((100% / 12) * 5);
+  }
+  .item-md-7 {
+    width: calc((100% / 12) * 7);
+  }
+  .item-md-8 {
+    width: calc((100% / 3) * 2);
+  }
+  .item-md-6 {
+    width: 50%;
+  }
+  .item-md-9 {
+    width: 75%;
+  }
+  .item-md-10 {
+    width: calc((100% / 6) * 5);
+  }
+}
+
+div.form-error input {
+  border: 1px solid #f94040 !important;
+}
+
+div.form-error h6.error-text {
+  display: block !important;
+}
+
+h6.error-text {
+  display: none;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 14px;
+  margin-top: 4px;
+  color: #f94040;
+}
+
+div.check-custom {
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+div.check-custom .cont {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #333333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div.check-custom .cont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+div.check-custom .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  border: 1px solid #f29824;
+  background-color: #fff;
+}
+
+div.check-custom .cont:hover input ~ .checkmark {
+  background-color: #fff5e8;
+}
+
+div.check-custom .cont input:checked ~ .checkmark {
+  background-color: #f29824;
+}
+
+div.check-custom .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+div.check-custom .cont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+div.check-custom .cont .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.pagination {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination .vue-ads-leading-loose {
+  display: none;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 5px;
+}
+
+.pagination button i {
+  font-size: 22px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.pagination button:hover {
+  color: #f29824;
+  background-color: #fff5e8;
+}
+
+.pagination button.vue-ads-text-white {
+  background-color: #f29824;
+  color: #fff;
+}
+
+.dashboard-content {
+  background-color: #f8fcff;
+}
+/*# sourceMappingURL=style.css.map */
